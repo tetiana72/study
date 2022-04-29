@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Купить авто</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Фильтры</legend>
+
+      <div>
+        <ul>
+          <li>
+            <label for="list">Тип кузова</label>
+            <select name="list" id="list" required>
+              <option selected disabled value="">Выберите тип кузова</option>
+              <option>Седан</option>
+              <option>Хетчбэк</option>
+              <option>Купе</option>
+              <option>Универсал</option>
+              <option>Внедорожник/Кроссовер</option>
+              <option>Минивэн</option>
+              <option>Микроавтобус</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="lis">Марка авто</label>
+            <select name="list2" id="lis">
+              <option selected disabled>Выберите марку</option>
+              <option>Audi</option>
+              <option>BMW</option>
+              <option>Ford</option>
+              <option>Honda</option>
+              <option>Hyundai</option>
+              <option>Kia</option>
+              <option>Lada (ВАЗ)</option>
+              <option>Mazda</option>
+              <option>FIAT</option>
+              <option>Ferrari</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="li">Страна производитель</label>
+            <select name="list3" id="li">
+              <option selected disabled>Выберите страну</option>
+              <option>Китай</option>
+              <option>США</option>
+              <option>Япония</option>
+              <option>Германия</option>
+              <option>Южная Корея</option>
+              <option>Индия</option>
+              <option>Испания</option>
+              <option>Франция</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="price"> Цена (грн) от</label>
+            <select id="price" name="list4">
+              <option>0</option>
+              <option>10 000</option>
+              <option>20 000</option>
+              <option>30 000</option>
+            </select>
+
+            <label>до</label>
+            <select name="list4">
+              <option selected disabled>0</option>
+              <option>50 000</option>
+              <option>60 000</option>
+              <option>70 000</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label>Год выпуска от</label>
+            <select name="list5">
+              <option selected disabled>0</option>
+              <option>1980</option>
+              <option>1985</option>
+              <option>1990</option>
+              <option>1995</option>
+            </select>
+
+            <label>до</label>
+            <select name="list5">
+              <option selected disabled>0</option>
+              <option>2000</option>
+              <option>2005</option>
+              <option>2013</option>
+              <option>2022</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="condition">Состояние</label>
+            <input id="condition" type="checkbox" name="condition" value="new">Новая
+            <input type="checkbox" name="condition" value="hit">Битая
+            <input type="checkbox" name="condition" value="second house">Б/У
+            <input type="checkbox" name="condition" value="part">На запчасти
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="fuel">Вид топлева</label>
+            <input id="fuel" type="checkbox" name="petrol" value="yes">Бензин
+            <input type="checkbox" name="gas" value="yes">Газ
+            <input type="checkbox" name="electro" value="yes">Электро
+            <input type="checkbox" name="diesel" value="yes">Дизель
+            <input type="checkbox" name="hybrid" value="yes">Гиброд
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="transmission">Тип коробки передач</label>
+            <input id="transmission" type="radio" name="transmission" value="mechanics">Механика
+            <input type="radio" name="transmission" value="auto">Автомат
+            <input type="radio" name="transmission" value="adaptive">Адаптивная
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="color">Цвет</label>
+            <select id="color" name="color">
+              <option selected disabled>Выберите цвет авто</option>
+              <option>Белый</option>
+              <option>Красный</option>
+              <option>Серый</option>
+              <option>Черный</option>
+              <option>Желтый</option>
+              <option>Синий</option>
+              <option>Зеленый</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <label for="list6">Комфорт</label>
+            <select name="list6" id="list6" multiple>
+              <option selected disabled>Сделайте выбор</option>
+              <option>Электропакет</option>
+              <option>Кондиционер</option>
+              <option>Парктроник</option>
+              <option>Бортовой компьютер</option>
+              <option>Датчик света</option>
+              <option>Запуск кнопкой</option>
+              <option>Климат контроль</option>
+              <option>Кожаный салон</option>
+              <option>Круиз контроль</option>
+              <option>Подогрев зеркал</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+    <div>
+      <button type="button">Поиск</button>
+      <button type="reset">Сбросить</button>
+    </div>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Регистрация</legend>
+      <div>
+        <label for="email">Эл.почта</label>
+        <input id="email" type="email" name="email" value="" placeholder="Введите email" required>
+      </div>
+
+      <div>
+        <label for="psw">Пароль</label>
+        <input id="psw" type="password" name="psw" value="" placeholder="Введите пароль" required minlength="4"
+          maxlength="12">
+      </div>
+
+      <div>
+        <label for="password">Подтверждение пароля</label>
+        <input id="password" type="password" name="psw" placeholder="Подтвердите пароль" required minlength="4"
+          maxlength="12">
+      </div>
+    </fieldset>
+
+    <div>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+    </div>
+  </form>
+
+</body>
+
+</html>

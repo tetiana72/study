@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+</head>
+
+<body>
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Авторизация</legend>
+      <div>
+        <label for="email">Эл.почта</label>
+        <input id="email" type="email" name="email" value="" placeholder="Введите email" required>
+      </div>
+
+      <div>
+        <label for="psw">Пароль</label>
+        <input id="psw" type="password" name="psw"  value="" placeholder="Введите пароль" minlength="4" maxlength="12" required>
+      </div>
+
+      <div>
+        <label for="check">Запомнить пароль</label>
+        <input id="check" type="checkbox" value="">
+      </div>
+    </fieldset>
+
+    <div>
+      <button type="submit">Отправить</button>
+      <button type="reset">Сбросить</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
