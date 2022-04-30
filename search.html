@@ -83,8 +83,8 @@
               <option>30 000</option>
             </select>
 
-            <label>до</label>
-            <select name="list4">
+            <label for="list4">до</label>
+            <select id="list4" name="list4">
               <option selected disabled>0</option>
               <option>50 000</option>
               <option>60 000</option>
@@ -107,8 +107,8 @@
               <option>1996</option>
             </select>
 
-            <label>до</label>
-            <select name="list5">
+            <label for="list5">до</label>
+            <select id="list5" name="list5">
               <option selected disabled>0</option>
               <option>2000</option>
               <option>2005</option>
@@ -195,10 +195,14 @@
         </ul>
       </div>
     </fieldset>
-    <div>
-      <button type="button">Поиск</button>
-      <button type="reset">Сбросить</button>
-    </div>
+
+    <fieldset>
+      <legend>Действия</legend>
+      <div>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+      </div>
+    </fieldset>
   </form>
 
 </body>
