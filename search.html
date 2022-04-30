@@ -12,187 +12,168 @@
 
   <form action="https://tests.fomenko.top/echo/index.php" method="get">
     <fieldset>
-      <legend>Фильтры</legend>
-
+      <legend>Тип кузова</legend>
       <div>
-        <ul>
-          <li>
-            <label for="list">Тип кузова</label>
-            <select name="list" id="list" required>
-              <option selected disabled value="">Выберите тип кузова</option>
-              <option>Седан</option>
-              <option>Хетчбэк</option>
-              <option>Купе</option>
-              <option>Универсал</option>
-              <option>Внедорожник/Кроссовер</option>
-              <option>Минивэн</option>
-              <option>Микроавтобус</option>
-            </select>
-          </li>
-        </ul>
+        <label for="list">Выберите тип кузова</label>
+        <select name="list" id="list" required>
+          <option>Седан</option>
+          <option>Хетчбэк</option>
+          <option>Купе</option>
+          <option>Универсал</option>
+          <option>Внедорожник/Кроссовер</option>
+          <option>Минивэн</option>
+          <option>Микроавтобус</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Марка авто</legend>
       <div>
-        <ul>
-          <li>
-            <label for="lis">Марка авто</label>
-            <select name="list2" id="lis">
-              <option selected disabled>Выберите марку</option>
-              <option>Audi</option>
-              <option>BMW</option>
-              <option>Ford</option>
-              <option>Honda</option>
-              <option>Hyundai</option>
-              <option>Kia</option>
-              <option>Lada (ВАЗ)</option>
-              <option>Mazda</option>
-              <option>FIAT</option>
-              <option>Ferrari</option>
-            </select>
-          </li>
-        </ul>
+        <label for="lis">Выберите марку</label>
+        <select name="list2" id="lis">
+          <option>Audi</option>
+          <option>BMW</option>
+          <option>Ford</option>
+          <option>Honda</option>
+          <option>Hyundai</option>
+          <option>Kia</option>
+          <option>Lada (ВАЗ)</option>
+          <option>Mazda</option>
+          <option>FIAT</option>
+          <option>Ferrari</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Страна производитель</legend>
       <div>
-        <ul>
-          <li>
-            <label for="li">Страна производитель</label>
-            <select name="list3" id="li">
-              <option selected disabled>Выберите страну</option>
-              <option>Китай</option>
-              <option>США</option>
-              <option>Япония</option>
-              <option>Германия</option>
-              <option>Южная Корея</option>
-              <option>Индия</option>
-              <option>Испания</option>
-              <option>Франция</option>
-            </select>
-          </li>
-        </ul>
+        <label for="li">Выберите страну</label>
+        <select name="list3" id="li">
+          <option>Китай</option>
+          <option>США</option>
+          <option>Япония</option>
+          <option>Германия</option>
+          <option>Южная Корея</option>
+          <option>Индия</option>
+          <option>Испания</option>
+          <option>Франция</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Цена (грн)</legend>
       <div>
-        <ul>
-          <li>
-            <label for="price"> Цена (грн) от</label>
-            <select id="price" name="list4">
-              <option>0</option>
-              <option>10 000</option>
-              <option>20 000</option>
-              <option>30 000</option>
-            </select>
+        <label for="price">от</label>
+        <select id="price" name="list4">
+          <option>0</option>
+          <option>10 000</option>
+          <option>20 000</option>
+          <option>30 000</option>
+        </select>
 
-            <label for="list4">до</label>
-            <select id="list4" name="list4">
-              <option selected disabled>0</option>
-              <option>50 000</option>
-              <option>60 000</option>
-              <option>70 000</option>
-            </select>
-          </li>
-        </ul>
+        <label for="list4">до</label>
+        <select id="list4" name="list4">
+          <option selected disabled>0</option>
+          <option>50 000</option>
+          <option>60 000</option>
+          <option>70 000</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Год выпуска</legend>
       <div>
-        <ul>
-          <li>
-            <label>Год выпуска от</label>
-            <select name="list5">
-              <option selected disabled>0</option>
-              <option>1980</option>
-              <option>1985</option>
-              <option>1990</option>
-              <option>1995</option>
-              <option>1996</option>
-            </select>
+        <label for="list5">от</label>
+        <select id="list5" name="list5">
+          <option selected disabled>0</option>
+          <option>1980</option>
+          <option>1985</option>
+          <option>1990</option>
+          <option>1995</option>
+          <option>1996</option>
+        </select>
 
-            <label for="list5">до</label>
-            <select id="list5" name="list5">
-              <option selected disabled>0</option>
-              <option>2000</option>
-              <option>2005</option>
-              <option>2009</option>
-              <option>2013</option>
-              <option>2022</option>
-            </select>
-          </li>
-        </ul>
+        <label for="list6">до</label>
+        <select id="list6" name="list6">
+          <option selected disabled>0</option>
+          <option>2000</option>
+          <option>2005</option>
+          <option>2009</option>
+          <option>2013</option>
+          <option>2022</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Состояние</legend>
       <div>
-        <ul>
-          <li>
-            <label for="condition">Состояние</label>
-            <input id="condition" type="checkbox" name="condition" value="new">Новая
-            <input type="checkbox" name="condition" value="hit">Битая
-            <input type="checkbox" name="condition" value="second house">Б/У
-            <input type="checkbox" name="condition" value="part">На запчасти
-          </li>
-        </ul>
+        <label for="condition"></label>
+        <input id="condition" type="checkbox" name="condition" value="new">Новая
+        <input type="checkbox" name="condition" value="hit">Битая
+        <input type="checkbox" name="condition" value="second house">Б/У
+        <input type="checkbox" name="condition" value="part">На запчасти
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Вид топлева</legend>
       <div>
-        <ul>
-          <li>
-            <label for="fuel">Вид топлева</label>
-            <input id="fuel" type="checkbox" name="petrol" value="yes">Бензин
-            <input type="checkbox" name="gas" value="yes">Газ
-            <input type="checkbox" name="electro" value="yes">Электро
-            <input type="checkbox" name="diesel" value="yes">Дизель
-            <input type="checkbox" name="hybrid" value="yes">Гиброд
-          </li>
-        </ul>
+        <label for="fuel"></label>
+        <input id="fuel" type="checkbox" name="petrol" value="yes">Бензин
+        <input type="checkbox" name="gas" value="yes">Газ
+        <input type="checkbox" name="electro" value="yes">Электро
+        <input type="checkbox" name="diesel" value="yes">Дизель
+        <input type="checkbox" name="hybrid" value="yes">Гиброд
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Тип коробки передач</legend>
       <div>
-        <ul>
-          <li>
-            <label for="transmission">Тип коробки передач</label>
-            <input id="transmission" type="radio" name="transmission" value="mechanics">Механика
-            <input type="radio" name="transmission" value="auto">Автомат
-            <input type="radio" name="transmission" value="adaptive">Адаптивная
-          </li>
-        </ul>
+        <label for="transmission"></label>
+        <input id="transmission" type="radio" name="transmission" value="mechanics">Механика
+        <input type="radio" name="transmission" value="auto">Автомат
+        <input type="radio" name="transmission" value="adaptive">Адаптивная
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Цвет</legend>
       <div>
-        <ul>
-          <li>
-            <label for="color">Цвет</label>
-            <select id="color" name="color">
-              <option selected disabled>Выберите цвет авто</option>
-              <option>Белый</option>
-              <option>Красный</option>
-              <option>Серый</option>
-              <option>Черный</option>
-              <option>Желтый</option>
-              <option>Синий</option>
-              <option>Зеленый</option>
-            </select>
-          </li>
-        </ul>
+        <label for="color">Выберите цвет авто</label>
+        <select id="color" name="color">
+          <option>Белый</option>
+          <option>Красный</option>
+          <option>Серый</option>
+          <option>Черный</option>
+          <option>Желтый</option>
+          <option>Синий</option>
+          <option>Зеленый</option>
+        </select>
       </div>
+    </fieldset>
 
+    <fieldset>
+      <legend>Комфорт</legend>
       <div>
-        <ul>
-          <li>
-            <label for="list6">Комфорт</label>
-            <select name="list6" id="list6" multiple>
-              <option selected disabled>Сделайте выбор</option>
-              <option>Электропакет</option>
-              <option>Кондиционер</option>
-              <option>Парктроник</option>
-              <option>Бортовой компьютер</option>
-              <option>Датчик света</option>
-              <option>Запуск кнопкой</option>
-              <option>Климат контроль</option>
-              <option>Кожаный салон</option>
-              <option>Круиз контроль</option>
-              <option>Подогрев зеркал</option>
-            </select>
-          </li>
-        </ul>
+        <label for="list7">Сделайте выбор</label>
+        <select name="list7" id="list7" multiple>
+          <option>Электропакет</option>
+          <option>Кондиционер</option>
+          <option>Парктроник</option>
+          <option>Бортовой компьютер</option>
+          <option>Датчик света</option>
+          <option>Запуск кнопкой</option>
+          <option>Климат контроль</option>
+          <option>Кожаный салон</option>
+          <option>Круиз контроль</option>
+          <option>Подогрев зеркал</option>
+        </select>
       </div>
     </fieldset>
 
