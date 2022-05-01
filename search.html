@@ -15,7 +15,8 @@
       <legend>Тип кузова</legend>
       <div>
         <label for="list">Выберите тип кузова</label>
-        <select name="list" id="list" required>
+        <select name="body" id="list" required>
+          <option selected disabled> Выберите кузов</option>
           <option>Седан</option>
           <option>Хетчбэк</option>
           <option>Купе</option>
@@ -31,7 +32,8 @@
       <legend>Марка авто</legend>
       <div>
         <label for="lis">Выберите марку</label>
-        <select name="list2" id="lis">
+        <select name="brand" id="lis">
+          <option selected disabled>Все марки</option>
           <option>Audi</option>
           <option>BMW</option>
           <option>Ford</option>
@@ -50,7 +52,8 @@
       <legend>Страна производитель</legend>
       <div>
         <label for="li">Выберите страну</label>
-        <select name="list3" id="li">
+        <select name="country" id="li">
+          <option selected disabled>Все страны</option>
           <option>Китай</option>
           <option>США</option>
           <option>Япония</option>
@@ -66,17 +69,19 @@
     <fieldset>
       <legend>Цена (грн)</legend>
       <div>
-        <label for="price">от</label>
-        <select id="price" name="list4">
-          <option>0</option>
-          <option>10 000</option>
-          <option>20 000</option>
-          <option>30 000</option>
+        <select name="price start">
+          <option value="0">от</option>
+          <option value="10 000">10 000</option>
+          <option value="20 000">20 000</option>
+          <option value="30 000">30 000</option>
+          <option value="40 000">40 000</option>
+          <option value="50 000">50 000</option>
         </select>
 
-        <label for="list4">до</label>
-        <select id="list4" name="list4">
-          <option selected disabled>0</option>
+        <select name="price max">
+          <option>до</option>
+          <option>30 000</option>
+          <option>40 000</option>
           <option>50 000</option>
           <option>60 000</option>
           <option>70 000</option>
@@ -87,24 +92,22 @@
     <fieldset>
       <legend>Год выпуска</legend>
       <div>
-        <label for="list5">от</label>
-        <select id="list5" name="list5">
-          <option selected disabled>0</option>
-          <option>1980</option>
-          <option>1985</option>
-          <option>1990</option>
-          <option>1995</option>
-          <option>1996</option>
+        <select name="year start">
+          <option value="0">от</option>
+          <option value="1980">1980</option>
+          <option value="1985">1985</option>
+          <option value="1990">1990</option>
+          <option value="1995">1995</option>
+          <option value="1996">1996</option>
         </select>
 
-        <label for="list6">до</label>
-        <select id="list6" name="list6">
-          <option selected disabled>0</option>
-          <option>2000</option>
-          <option>2005</option>
-          <option>2009</option>
-          <option>2013</option>
-          <option>2022</option>
+        <select name="year last">
+          <option value="0">до</option>
+          <option value="2000">2000</option>
+          <option value="2005">2005</option>
+          <option value="2009">2009</option>
+          <option value="2013">2013</option>
+          <option value="2022">2022</option>
         </select>
       </div>
     </fieldset>
@@ -112,33 +115,54 @@
     <fieldset>
       <legend>Состояние</legend>
       <div>
-        <label for="condition"></label>
-        <input id="condition" type="checkbox" name="condition" value="new">Новая
-        <input type="checkbox" name="condition" value="hit">Битая
-        <input type="checkbox" name="condition" value="second house">Б/У
-        <input type="checkbox" name="condition" value="part">На запчасти
+        <label>
+          <input type="checkbox" name="condition" value="new">Новая
+        </label>
+        <label>
+          <input type="checkbox" name="condition" value="hit">Битая
+        </label>
+        <label>
+          <input type="checkbox" name="condition" value="second house">Б/У
+        </label>
+        <label>
+          <input type="checkbox" name="condition" value="part">На запчасти
+        </label>
       </div>
     </fieldset>
 
     <fieldset>
       <legend>Вид топлева</legend>
       <div>
-        <label for="fuel"></label>
-        <input id="fuel" type="checkbox" name="petrol" value="yes">Бензин
-        <input type="checkbox" name="gas" value="yes">Газ
-        <input type="checkbox" name="electro" value="yes">Электро
-        <input type="checkbox" name="diesel" value="yes">Дизель
-        <input type="checkbox" name="hybrid" value="yes">Гиброд
+        <label>
+          <input type="checkbox" name="petrol" value="yes">Бензин
+        </label>
+        <label>
+          <input type="checkbox" name="petrol" value="gas">Газ
+        </label>
+        <label>
+          <input type="checkbox" name="petrol" value="electro">Электро
+        </label>
+        <label>
+          <input type="checkbox" name="petrol" value="diesel">Дизель
+        </label>
+        <label>
+          <input type="checkbox" name="petrol" value="hybrid">Гиброд
+        </label>
       </div>
     </fieldset>
 
     <fieldset>
       <legend>Тип коробки передач</legend>
       <div>
-        <label for="transmission"></label>
-        <input id="transmission" type="radio" name="transmission" value="mechanics">Механика
-        <input type="radio" name="transmission" value="auto">Автомат
-        <input type="radio" name="transmission" value="adaptive">Адаптивная
+        <label>
+          <input type="radio" name="transmission" value="mechanics">Механика
+        </label>
+        <label>
+          <input type="radio" name="transmission" value="auto">Автомат
+        </label>
+        <label>
+          <input type="radio" name="transmission" value="adaptive">Адаптивная
+        </label>
       </div>
     </fieldset>
 
@@ -147,6 +171,7 @@
       <div>
         <label for="color">Выберите цвет авто</label>
         <select id="color" name="color">
+          <option selected disabled>Выберите цвет</option>
           <option>Белый</option>
           <option>Красный</option>
           <option>Серый</option>
@@ -162,7 +187,7 @@
       <legend>Комфорт</legend>
       <div>
         <label for="list7">Сделайте выбор</label>
-        <select name="list7" id="list7" multiple>
+        <select name="comfort" id="list7" multiple>
           <option>Электропакет</option>
           <option>Кондиционер</option>
           <option>Парктроник</option>
